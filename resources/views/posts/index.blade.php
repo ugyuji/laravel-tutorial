@@ -7,7 +7,7 @@
             <div class="card mt-4 mb-4">
                 <div class="card-body">
                     <h3><a href="/posts/{{ $post->id }}">{{ $post->title }}</a></h3>
-                    <small>{{ $post->created_at }}</small>
+                    <small>Written on {{ $post->created_at }} by {{ $post->user->name }}</small>
                 </div>
             </div>
         @endforeach
